@@ -125,6 +125,9 @@ header {
   border-radius: 24px 24px 0px 0px;
   padding: 24px 0px;
 }
+header .logo {
+  height: 50px;
+}
 
 .menus {
   display: flex;
@@ -180,6 +183,33 @@ header {
 .offcanvas-body .menus {
   flex-direction: column;
   justify-content: center;
+}
+
+.mt-6 {
+  margin-top: 48px;
+}
+@media (min-width: 1200px) {
+  .mt-6 {
+    margin-top: 96px;
+  }
+}
+
+.padding-top {
+  padding-top: 50px;
+}
+@media (min-width: 1200px) {
+  .padding-top {
+    padding-top: 100px;
+  }
+}
+
+.padding-bottom {
+  padding-bottom: 50px;
+}
+@media (min-width: 1200px) {
+  .padding-bottom {
+    padding-bottom: 100px;
+  }
 }
 
 @font-face {
@@ -238,6 +268,28 @@ h1, h2, h3, h4, h5, h6 {
 
 .fs-14 {
   font-size: 14px;
+}
+
+.section-heading {
+  font-size: 32px;
+  color: var(--black);
+  line-height: 110% !important;
+}
+@media (min-width: 992px) {
+  .section-heading {
+    font-size: 48px;
+  }
+}
+
+.main-heading {
+  font-size: 32px;
+  color: var(--white);
+  line-height: 110% !important;
+}
+@media (min-width: 992px) {
+  .main-heading {
+    font-size: 48px;
+  }
 }
 
 :root {
@@ -342,8 +394,32 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--shade-10);
 }
 
-.banner h1 {
-  line-height: 110% !important;
+.banner {
+  background-color: var(--bg-black);
+  margin: 24px;
+  border-radius: 24px;
+  min-height: 514px;
+  padding-top: 90px;
+  background-image: url(../img/bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: 96px;
+  padding: 24px;
+  padding-top: 48px;
+}
+@media (min-width: 996px) {
+  .banner {
+    padding-top: 200px;
+    min-height: 834px;
+    padding-top: 110px !important;
+    padding: 48px;
+  }
+}
+@media (min-width: 1200px) {
+  .banner {
+    margin-top: 24px;
+    padding-top: 210px !important;
+  }
 }
 .banner p {
   font-size: 18px;
@@ -352,17 +428,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
-.banner {
-  background-color: var(--bg-black);
-  margin: 24px;
-  border-radius: 24px;
-  min-height: 834px;
-  padding-top: 300px;
-  background-image: url(../img/bg.png);
+.phones {
+  position: relative;
+  margin-top: -100px;
 }
-.banner h1 {
-  font-size: 62px;
-  color: var(--white) !important;
+@media (min-width: 996px) {
+  .phones {
+    margin-top: -300px;
+  }
 }
 
 textarea:focus, input:focus {

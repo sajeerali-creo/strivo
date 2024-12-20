@@ -21,14 +21,16 @@
 </head>
 
 <body>
-  <div class="mobile-header p-3">
+  <div class="mobile-header p-3 d-xl-none">
     <div class="d-flex align-items-center justify-content-between main-div">
       <a href="/"><img src="img/Logo.svg"></a>
-      <div class="mb-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="ti ti-menu-3"></i></div>
+      <div class="mb-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+        aria-controls="offcanvasWithBothOptions"><i class="ti ti-menu-3"></i></div>
     </div>
   </div>
 
-  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+    aria-labelledby="offcanvasWithBothOptionsLabel">
     <div class="offcanvas-body">
       <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
       <a href="" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="ti ti-x text-white"></i></a>
@@ -53,10 +55,10 @@
     </div>
   </div>
 
-  <div class="header-container d-none d-lg-block">
+  <div class="header-container d-none d-xl-block">
     <header>
       <div class="container d-flex align-items-center justify-content-between">
-        <a href="/"><img src="img/Logo.svg"></a>
+        <a href="/"><img src="img/Logo.svg" class="logo"></a>
         <ul class="menus">
           <li>
             <a href="#">Home</a>
@@ -81,11 +83,39 @@
 
   <section class="banner d-flex justify-content-center text-center">
     <div class="container">
-      <h1 class="text-white">Find Your Perfect Personal Trainer<br class="d-none d-lg-block"> Anytime, Anywhere</h1>
-      <p class="fs-18">Book sessions with certified trainers at home, in the gym, or outdoors—fitness made easy for you and your family</p>
+      <h1 class="text-white main-heading">Find Your Perfect Personal Trainer<br class="d-none d-lg-block"> Anytime, Anywhere</h1>
+      <p class="fs-18">Book sessions with certified trainers at home, in the gym, or outdoors—fitness made easy for you
+        and your family</p>
       <div class="d-flex justify-content-center">
-        <a href="#" class="btn-secondary mt-5">Find Your Trainer Today!</a>
+        <a href="#" class="btn-secondary mt-4 mt-lg-5">Find Your Trainer Today!</a>
       </div>
+    </div>
+  </section>
+
+  <section class="phones">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <div class="row">
+            <div class="col-4 mt-6" data-aos="fade-up" data-aos-duration="3000">
+              <img src="img/m_1_2x.webp" class="w-100">
+            </div>
+            <div class="col-4" data-aos="fade-up" data-aos-duration="1500">
+              <img src="img/m2_2x.webp" class="w-100">
+            </div>
+            <div class="col-4 mt-6" data-aos="fade-up" data-aos-duration="3000">
+              <img src="img/m3_2x.webp" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="padding-top padding-bottom">
+    <div class="container text-center">
+      <h2 class="section-heading">Why Strivo is the Personal Training<br class="d-none d-lg-block"> 
+        Solution for You</h2>
     </div>
   </section>
 

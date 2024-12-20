@@ -64,3 +64,20 @@ h1, h2, h3, h4, h5, h6{
     font-size: 14px;
 }
 
+
+.section-heading{
+    font-size: 32px;
+    color: var(--black);
+    line-height: 110%!important;
+    @media (min-width: 992px) {
+        font-size: 48px;
+    }
+}
+.main-heading{
+    font-size: 32px;
+    color: var(--white);
+    line-height: 110%!important;
+    @media (min-width: 992px) {
+        font-size: 48px;
+    }
+}
