@@ -1,0 +1,66 @@
+
+// Main font
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+@font-face {
+    font-family: 'Universal Doomsday';
+    src: url('../fonts/UniversalDoomsdayMedium.eot');
+    src: url('../fonts/UniversalDoomsdayMedium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UniversalDoomsdayMedium.woff2') format('woff2'),
+        url('../fonts/UniversalDoomsdayMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+body{
+    font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    line-height: 1.5em!important;
+    font-family: 'Universal Doomsday';
+}
+.h1{
+    font-size: 34px;
+    font-weight: 600;
+    color: var(--white);
+}
+@media (min-width: 992px) {
+    .h1{
+        font-size: 46px;
+        font-weight: 600;
+    }
+}
+.h5{
+    font-size: 16px;
+    font-weight: 400;
+    br{
+        display: none;
+    }
+}
+@media (min-width: 992px) {
+    .h5{
+        font-size: 18px;
+        font-weight: 400;
+        br{
+            display: inline-block;
+        }
+    }
+}
+
+.font-weight-600{
+    font-weight: 600;
+}
+
+.font-weight-400{
+    font-weight: 400;
+}
+
+.fs-14{
+    font-size: 14px;
+}
+
