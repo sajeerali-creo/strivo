@@ -21,7 +21,39 @@
 </head>
 
 <body>
-  <div class="header-container">
+  <div class="mobile-header p-3">
+    <div class="d-flex align-items-center justify-content-between main-div">
+      <a href="/"><img src="img/Logo.svg"></a>
+      <div class="mb-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="ti ti-menu-3"></i></div>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-body">
+      <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+      <a href="" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="ti ti-x text-white"></i></a>
+      <ul class="menus">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About Us</a>
+        </li>
+        <li>
+          <a href="#">How it Works</a>
+        </li>
+        <li>
+          <a href="#">Personal Trainer</a>
+        </li>
+        <li>
+          <a href="#">Contact Us</a>
+        </li>
+      </ul>
+      <a href="#" class="btn-primary">Download&nbsp;<i class="ti ti-download"></i></a>
+    </div>
+  </div>
+
+  <div class="header-container d-none d-lg-block">
     <header>
       <div class="container d-flex align-items-center justify-content-between">
         <a href="/"><img src="img/Logo.svg"></a>
@@ -47,8 +79,14 @@
     </header>
   </div>
 
-  <section class="banner d-flex justify-content-center">
-    <h1 class="text-white">Find Your Perfect Personal Trainer Anytime, Anywhere</h1>
+  <section class="banner d-flex justify-content-center text-center">
+    <div class="container">
+      <h1 class="text-white">Find Your Perfect Personal Trainer<br class="d-none d-lg-block"> Anytime, Anywhere</h1>
+      <p class="fs-18">Book sessions with certified trainers at home, in the gym, or outdoors—fitness made easy for you and your family</p>
+      <div class="d-flex justify-content-center">
+        <a href="#" class="btn-secondary mt-5">Find Your Trainer Today!</a>
+      </div>
+    </div>
   </section>
 
   <!-- Script -->
