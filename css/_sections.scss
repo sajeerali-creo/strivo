@@ -1,7 +1,114 @@
-.phones{
+.phones {
     position: relative;
     margin-top: -100px;
+
     @media (min-width: 996px) {
         margin-top: -300px;
     }
+}
+
+.box-border {
+    width: 100%;
+    height: 298px;
+    border: 1px solid #E1E1E1;
+    border-radius: 16px;
+
+    h3 {
+        font-size: 24px;
+    }
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    background: #FFF1EF;
+    border-radius: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+        color: var(--vivid_coral);
+        font-size: 48px;
+    }
+}
+
+.gradient {
+    width: 100%;
+    background: linear-gradient(180deg, #F0F5FF 0%, rgba(240, 245, 255, 0) 100%);
+}
+
+.box-image {
+    width: 100%;
+    height: 383px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 383px;
+        object-fit: cover;
+    }
+
+    .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 0px;
+        left: 0p;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+
+        h4 {
+            font-size: 24px;
+        }
+    }
+}
+
+.testimonial {
+    background-color: #FFF8F6;
+    border-bottom: 1px solid #EBEBEB;
+
+    .testi-box {
+        background-color: var(--white);
+        width: 100%;
+        height: 279px;
+        border-radius: 10px;
+        background-image: url(../img/qt.webp);
+        background-repeat: no-repeat;
+        background-position: 95% 30px;
+        background-size: 44px;
+        .user-head{
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+            border-radius: 160px;
+            img{
+                width: 100%;
+                height: 60px;
+                object-fit: cover;
+            }
+        }
+        h3{
+            font-size: 18px;
+        }
+    }
+    .carousel-indicators{
+        margin-bottom: -50px;
+    }
+    .carousel-indicators [data-bs-target]{
+        width: 10px;
+        height: 10px;
+        border-radius: 160px;
+        background-color: #000;
+        border: none;
+    }
+}
+
+.box-hero{
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+    background-color: #DAE3EC;
 }

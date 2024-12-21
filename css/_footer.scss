@@ -1,0 +1,29 @@
+footer{
+    background-color: #212121;
+    h5{
+        color: var(--white);
+        padding-bottom: 16px;
+    }
+    ul{
+        li{
+            a{
+                display: block;
+                color: var(--white);
+                opacity: 0.6;
+                padding: 8px 0px;
+            }
+        }
+    }
+}
+
+.sub-footer{
+    border-top: 2px solid rgba(194, 194, 194, 0.1);
+    width: 100%;
+    a{
+        font: 16px;
+        i{
+            font-size: 24px;
+        }
+    }
+}
+
